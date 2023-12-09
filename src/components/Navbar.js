@@ -25,12 +25,14 @@ export default function Navbar() {
     display: "flex",
     padding: "10px",
     alignItems: "center",
+    justifyContent: "space-between",
     height: "5vh",
-    color: "white",
+    color: "black",
   };
   return (
     <div style={nbStyle}>
       <div>
+        View by : -
         <Link to="/">
           <button style={{ margin: "10px" }}>View Data</button>
         </Link>
@@ -44,6 +46,10 @@ export default function Navbar() {
           <button style={{ margin: "10px" }}>Priority</button>
         </Link>
       </div>
+      {/* <div>
+        Order by : -<button style={{ margin: "10px" }}>Sorting</button>
+        <button style={{ margin: "10px" }}>Priority</button>
+      </div> */}
     </div>
   );
 }

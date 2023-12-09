@@ -77,11 +77,46 @@ function Priority() {
       <table style={{ width: "100%", borderCollapse: "collapse" }}>
         {/* ... (table structure) */}
         <tr>
-          <th style={tableHeaderStyle}>No priority</th>
-          <th style={tableHeaderStyle}>Urgent</th>
-          <th style={tableHeaderStyle}>High</th>
-          <th style={tableHeaderStyle}>Medium</th>
-          <th style={tableHeaderStyle}>Low</th>
+          <th style={tableHeaderStyle}>
+            <img
+              src="https://e7.pngegg.com/pngimages/962/722/png-clipart-computer-icons-encapsulated-postscript-others-text-monochrome.png"
+              alt=""
+              style={{ height: "10px" }}
+            />
+            No priority
+          </th>
+          <th style={tableHeaderStyle}>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Software-update-urgent.svg/1200px-Software-update-urgent.svg.png"
+              alt=""
+              style={{ height: "15px" }}
+            />
+            Urgent
+          </th>
+          <th style={tableHeaderStyle}>
+            <img
+              src="https://pixlok.com/wp-content/uploads/2021/12/Mobile-Network-Icon-SVG-vvc.png"
+              alt=""
+              style={{ height: "15px" }}
+            />
+            High
+          </th>
+          <th style={tableHeaderStyle}>
+            <img
+              src="https://static.thenounproject.com/png/587669-200.png"
+              alt=""
+              style={{ height: "15px" }}
+            />
+            Medium
+          </th>
+          <th style={tableHeaderStyle}>
+            <img
+              src="https://static.thenounproject.com/png/269791-200.png"
+              alt=""
+              style={{ height: "15px" }}
+            />
+            Low
+          </th>
         </tr>
         <tr>
           <td style={tableCellStyle}>
@@ -166,7 +201,9 @@ function Priority() {
           </td> */}
         </tr>
       </table>
-      <button onClick={fetchData}>Double tap to Fetch Data</button>
+      <button onClick={fetchData} style={{ margin: "10px" }}>
+        Double tap to Fetch Data
+      </button>
     </>
   );
 }

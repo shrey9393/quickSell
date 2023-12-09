@@ -40,7 +40,6 @@ function User() {
   return (
     <>
       <div>
-        <button onClick={fetchData}>Double tap to Fetch Data</button>
         {/* createing a table based on users name as header  and the listing the tickits of user in the bewlow row */}
         <table>
           <tr>
@@ -50,7 +49,14 @@ function User() {
           {result &&
             result.map((item) => (
               <tr>
-                <td>{item.name}</td>
+                <td>
+                  <img
+                    src="https://png.pngtree.com/png-vector/20190805/ourlarge/pngtree-account-avatar-user-abstract-circle-background-flat-color-icon-png-image_1650938.jpg"
+                    alt=""
+                    style={{ height: "100px" }}
+                  />
+                  <h2>{item.name}</h2>
+                </td>
                 <td>
                   {userMap[item.id] &&
                     userMap[item.id].map((ticket) => (
@@ -62,6 +68,10 @@ function User() {
               </tr>
             ))}
         </table>
+
+        <button onClick={fetchData} style={{ margin: "10px" }}>
+          Double tap to Fetch Data
+        </button>
       </div>
     </>
   );

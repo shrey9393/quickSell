@@ -39,7 +39,9 @@ function WelcomePage() {
             </>
           ))
         ) : (
-          <button onClick={fetchData}>Double tap to Fetch Data</button>
+          <button onClick={fetchData} style={{ margin: "10px" }}>
+            Double tap to Fetch Data
+          </button>
         )}
       </div>
     </div>

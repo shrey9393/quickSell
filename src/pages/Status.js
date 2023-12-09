@@ -78,10 +78,38 @@ function Status() {
       >
         {/* ... (table structure) */}
         <tr>
-          <th style={tableHeaderStyle}>Todo</th>
-          <th style={tableHeaderStyle}>In Progress</th>
-          <th style={tableHeaderStyle}>Done</th>
-          <th style={tableHeaderStyle}>Canceled</th>
+          <th style={tableHeaderStyle}>
+            <img
+              src="https://cdn.icon-icons.com/icons2/1674/PNG/512/radiobuttonoff_111068.png"
+              alt=""
+              style={{ height: "10px" }}
+            />
+            Todo
+          </th>
+          <th style={tableHeaderStyle}>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/5695/5695839.png"
+              alt=""
+              style={{ height: "10px" }}
+            />
+            In Progress
+          </th>
+          <th style={tableHeaderStyle}>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAhBs2hYbPF84nPCwQr8fRD4s8Awx_ia7-qOaLir2Ubg&s"
+              alt=""
+              style={{ height: "10px" }}
+            />
+            Done
+          </th>
+          <th style={tableHeaderStyle}>
+            <img
+              src="https://p1.hiclipart.com/preview/634/931/750/check-mark-logo-symbol-sign-semiotics-x-mark-red-png-clipart.jpg"
+              alt=""
+              style={{ height: "10px" }}
+            />
+            Canceled
+          </th>
         </tr>
         <tr>
           <td style={tableCellStyle}>
@@ -126,7 +154,9 @@ function Status() {
           </td>
         </tr>
       </table>
-      <button onClick={fetchData}>Double tap to Fetch Data</button>
+      <button onClick={fetchData} style={{ margin: "10px" }}>
+        Double tap to Fetch Data
+      </button>
     </>
   );
 }

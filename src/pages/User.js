@@ -40,7 +40,7 @@ function User() {
   return (
     <>
       <div>
-        <button onClick={fetchData}>Fetch Data</button>
+        <button onClick={fetchData}>Double tap to Fetch Data</button>
         {/* createing a table based on users name as header  and the listing the tickits of user in the bewlow row */}
         <table>
           <tr>

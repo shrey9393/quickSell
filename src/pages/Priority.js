@@ -166,7 +166,7 @@ function Priority() {
           </td> */}
         </tr>
       </table>
-      <button onClick={fetchData}>Fetch Data</button>
+      <button onClick={fetchData}>Double tap to Fetch Data</button>
     </>
   );
 }

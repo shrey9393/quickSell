@@ -39,7 +39,7 @@ function WelcomePage() {
             </>
           ))
         ) : (
-          <button onClick={fetchData}>Fetch Data</button>
+          <button onClick={fetchData}>Double tap to Fetch Data</button>
         )}
       </div>
     </div>

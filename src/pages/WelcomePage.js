@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-// import "./App.css";
 import Card from "../components/Card";
-import Navbar from "../components/Navbar";
 
 function WelcomePage() {
   const [result, setResult] = useState(null);

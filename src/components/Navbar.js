@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link, Navigate } from "react-router-dom";
 export default function Navbar() {
   const [selectedGroup, setSelectedGroup] = useState("");
   const [selectedSorting, setSelectedSorting] = useState("");
@@ -8,6 +8,7 @@ export default function Navbar() {
   const handleGroupChange = (event) => {
     setSelectedGroup(event.target.value);
   };
+
   const handleSortingChange = (event) => {
     setSelectedSorting(event.target.value);
   };

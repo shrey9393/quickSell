@@ -21,6 +21,12 @@ function WelcomePage() {
       console.error("Error fetching data:", err);
     }
   };
+  const st = {
+    color: "f2f2f2",
+    backgroundColor: "black",
+    padding: "10px",
+    borderRadius: "5px",
+  };
 
   return (
     <div className="App">

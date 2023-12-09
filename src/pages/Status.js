@@ -69,7 +69,13 @@ function Status() {
 
   return (
     <>
-      <table style={{ width: "100%", borderCollapse: "collapse" }}>
+      <table
+        style={{
+          width: "100%",
+          borderCollapse: "collapse",
+          backgroundColor: "#F2F2F2",
+        }}
+      >
         {/* ... (table structure) */}
         <tr>
           <th style={tableHeaderStyle}>Todo</th>

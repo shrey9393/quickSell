@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const Card = ({ user, msg }) => {
@@ -21,7 +22,7 @@ const Card = ({ user, msg }) => {
       <span>{user}</span>
       <h2>{msg}</h2>
       <span style={miniContainer} role="img" aria-label="Sneezing emoji">
-        <img src="../assets/dots.png" alt="..." />
+        ***
       </span>
 
       <span style={miniContainer}>
